@@ -1,0 +1,39 @@
+{
+  "name": "@a/2",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bun with-env next build",
+    "clean": "git clean -xdf .cache .next .turbo node_modules",
+    "dev": "bun with-env next dev",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "start": "bun with-env next start",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
+  },
+  "prettier": "@a/prettier-config",
+  "dependencies": {
+    "@kinde-oss/kinde-auth-nextjs": "latest",
+    "@kinde/management-api-js": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "shiki": "latest"
+  },
+  "devDependencies": {
+    "@a/eslint-config": "*",
+    "@a/prettier-config": "*",
+    "@a/tailwind-config": "*",
+    "@a/tsconfig": "*",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "dotenv-cli": "latest",
+    "eslint": "latest",
+    "prettier": "latest",
+    "tailwindcss": "^3",
+    "typescript": "latest"
+  }
+}
